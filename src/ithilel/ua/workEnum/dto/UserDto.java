@@ -7,7 +7,7 @@ public class UserDto {
     private String login;
     private String password;
     private String name = "Вы не авторизированы";
-    private String role = Roles.defaultRole() ;
+    private String role = Roles.defaultRole();
 
     public UserDto(String login, String password) {
         this.login = login;

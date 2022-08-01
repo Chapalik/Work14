@@ -8,17 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
         StoreController controller = new StoreController();
-        User anonymous = new User("anonym","anonymPass");
-        User manager= new User("manager","managerPass");
+        User anonymous = new User("anonym", "anonymPass");
+        User manager = new User("manager", "managerPass");
         manager.setRole(Roles.MANAGER.getLabel());
         manager.setName("Жбан Іван Іванович");
-        User director= new User("director","directorPass");
+        User director = new User("director", "directorPass");
         director.setRole(Roles.DIRECTOR.getLabel());
         director.setName("Крац Сергей Петрович");
-        User client= new User("client","mclientPass");
+        User client = new User("client", "mclientPass");
         client.setRole(Roles.CLIENT.getLabel());
         client.setName("Кузнецов Евгений Сергеевич");
-        User administrator= new User("administrator","administratorPass");
+        User administrator = new User("administrator", "administratorPass");
         administrator.setRole(Roles.ADMINISTRATOR.getLabel());
         administrator.setName("Голота Николай Николаевич");
 
@@ -30,7 +30,7 @@ public class Main {
 
         Store store = new Store();
 
-        controller.addStoreData(store,users,"У ваганыча","https://mystore.com");
+        controller.addStoreData(store, users, "У ваганыча", "https://mystore.com");
 
         StoreView view = new StoreView();
         view.initialization(store);

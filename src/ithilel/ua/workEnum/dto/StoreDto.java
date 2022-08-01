@@ -2,13 +2,13 @@ package ithilel.ua.workEnum.dto;
 
 public class StoreDto {
 
-   private String storeName;
+    private String storeName;
 
-   private String storeURL;
+    private String storeURL;
 
-   private UserDto[] users;
+    private UserDto[] users;
 
-   private UserDto authorizedUser = null;
+    private UserDto authorizedUser = null;
 
 
     public String getStoreName() {
